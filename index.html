@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/VLC_icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="../images/VLC_icon.png" alt="logo" class="image">
+            <h1 class="title-text">VLC media player</h1>
+        </div>
+        <div class="menubar">
+            <div class="menu" id="gettingVideo">Open
+                <input type="file" id="inputVideo" >
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Playback
+                    <ul class="menu-items">
+                        <li id="speedUp" class="submenu-item">Speed Up</li>
+                        <li id="speedDown" class="submenu-item">Speed Down</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="options">
+                <div class="menu">
+                    <div class="menu-btn">Audio
+                        <ul class="menu-items">
+                            <li id="volumeUp" class="submenu-item">Volume Up</li>
+                            <li id="volumeDown"  class="submenu-item">
+                                Volume Down</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="box">
+            <div class="toast" id="toast"></div>
+        </div>
+        <div class="iconPhoto" id="iconPhoto">
+            
+                <img src="../images/VLC_icon.png" alt="vlc" class="centerImage">
+            
+        </div>
+        <div class="holding2x" id="holding2x"></div>
+    </main>
+    <footer id="footerHead" class="footerHead">
+        <div class="range">
+            <!-- <input type="time" class="timeSet"> -->
+            
+                <span id="currentTime">00:00:00</span>
+                <input type="range" class="seekBar" id="slider" value="0" min="0" max="100">
+                <span id="totalTime">--/--/--</span>
+                <span  id="tooltipSeekbar" class="tooltipSeekbar"></span>
+        </div>
+        <div class="iconsVideos">
+
+           <div class="playButton">
+            <li class="listIcons">
+                <a href="#stop" aria-label="stop" id="stop" class="play">
+                    <i class="fa-solid fa-stop"></i>
+                    <span class="tooltip">Stop</span>
+
+                </a>
+            </li>
+            <li class="listIcons"> 
+                <a href="#backward" aria-label="Backward" id="Backward" class="play">
+                    <i class="fa-solid fa-backward" ></i>
+                    <span class="tooltip">Backward</span>
+
+                </a>
+                     
+            </li>
+             <li class="listIcons">     
+                <a href="#play" aria-label="Play" id="play" class="play">
+                    <i class="fa-solid fa-play icons "></i>
+                    <span class="tooltip">Play</span>
+
+                </a>
+                     
+             </li>
+             <li class="listIcons"> 
+                <a href="#fordward" aria-label="Play" id="fordward" class="play">
+                    <i class="fa-solid fa-forward foricon"></i>
+                    <span class="tooltip">Fordward</span>
+
+                </a>
+              </li>
+        
+              <li class="listIcons">
+                <a href="#expand" aria-label="expand" id="expand">
+                    <i class="fa-solid fa-expand"></i>
+                    <span class="tooltip">Full Screen</span>
+
+                </a>
+              
+             
+           </div>
+
+</div>
+
+        
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
